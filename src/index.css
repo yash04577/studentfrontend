@@ -1,5 +1,10 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,260 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mainContainer{
+  background-image: linear-gradient( to right, aqua 30%, rgb(255, 203, 107) 0% );
+}
+
+nav{
+  background-color: black;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav li a{
+
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav li a:hover{
+  color: orange;
+}
+
+
+/* card styling start here */
+/* card styling start here */
+/* card styling start here */
+
+.cardContainer{
+  width: 100vw;
+  height: 40vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBody{
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid black; */
+  box-shadow: 0 0 10px 4px red;
+  transition: 0.3s;
+}
+
+
+.cardBody:hover{
+  scale: 1.03;
+  box-shadow: 0 0 10px 4px orange;
+}
+
+
+.cardBody table{
+  width: 100%;
+}
+
+
+/* create student starts here */
+/* create student starts here */
+/* create student starts here */
+
+.wrapperCreateStudent{
+  width: 100vw;
+  height: 92vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( to right, aqua 50%, rgb(255, 203, 107) 50% );
+}
+
+.createFormContainer{
+  width: 70%;
+  height: 70%;
+  /* border: 2px solid black; */
+}
+
+.creationForm{
+  box-shadow: 0 0 10px 4px red;
+}
+
+
+.createBtn{
+  color: white;
+  background-color: orange;
+  border: none;
+  width: 70vw;
+  height: 45px;
+  font-size: larger;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.createBtn:active{
+  box-shadow: 0 0 10px 10px red;
+}
+
+
+
+.creationTable{
+  width: 100%;
+  height: 100%;
+}
+
+.creationTable input{
+  width: 100%;
+  height: 2.5rem;
+}
+
+.creationTable tr{
+  height: 2.5rem;
+  margin-top: 10px;
+}
+
+.creationTable td{
+  /* width: 30%; */
+}
+
+tr, td, table{
+  /* border: 1px solid rebeccapurple; */
+  /* margin: auto; */
+}
+
+
+
+
+/* deletion starts here */
+/* deletion starts here */
+/* deletion starts here */
+
+.wrapperDeleteStudent{
+  width: 100vw;
+  height: 92vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( to right, aqua 50%, rgb(255, 203, 107) 50% );
+}
+
+.deleteFormContainer{
+  width: 70%;
+  height: 70%;
+}
+
+.deleteFormContainer input{
+  width: 100%;
+  height: 2.5rem;
+}
+
+
+.deleteBtn{
+  margin-top: 10px;
+  color: white;
+  background-color: orange;
+  border: none;
+  width: 10vw;
+  height: 30px;
+  font-size: larger;
+  transition: 0.2s;
+}
+
+.deleteBtn:active{
+  box-shadow: 0 0 10px 10px red; 
+}
+
+/* update student starts here */
+/* update student starts here */
+/* update student starts here */
+
+.wrapperUpdateStudent{
+  width: 100vw;
+  height: 92vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( to right, aqua 50%, rgb(255, 203, 107) 50% );
+}
+
+.updateFormContainer{
+  width: 70%;
+  height: 70%;
+}
+
+.updateTable{
+  width: 100%;
+  height: 100%;
+}
+
+.updateTable input{
+  width: 100%;
+  height: 2.5rem;
+}
+
+.updateTable tr{
+  height: 2.5rem;
+  margin-top: 10px;
+}
+
+.updateBtn{
+  color: white;
+  background-color: orange;
+  border: none;
+  width: 70vw;
+  height: 45px;
+  font-size: larger;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.updateBtn:active{
+  box-shadow: 0 0 10px 10px red; 
+}
+
+.updateForm{
+  box-shadow: 0 0 10px 4px red;
+}
+
+
+
+/* home page styling starts here */
+/* home page styling starts here */
+/* home page styling starts here */
+
+.wrapperHome{
+  width: 100vw;
+  height: 92vh;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+   to right,
+  aqua 50%,
+    rgb(255, 203, 107) 50%
+  );
+}
+
+.homeContainer{
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid red; */
+}
+
+.aboutContainer{
+  text-align: center;
 }
